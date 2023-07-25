@@ -14,5 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	  });
 	  
+	  $('.services-btn').magnificPopup({
+		type: 'inline'
+	  });
+	  $('.modal-form-close').on('click', function(){
+		$.magnificPopup.close();
+	  });
 	  
 })

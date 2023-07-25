@@ -6,11 +6,35 @@
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio_5</title>
   </head>
 
   <body>
+
+    <div class="modal-form mfp-hide" id="modal-form">
+
+      <div class="modal-form-head">
+        <div class="modal-form-logo">
+          <img src="images/Logo.svg" alt="Construction">
+        </div>
+        <div class="modal-form-close">
+          <img src="images/close.svg" alt="Закрыть">
+        </div>
+      </div>
+
+      <div class="modal-form-body">
+        <div class="modal-form-title">Заказать звонок</div>
+        <form>
+          <input type="text" placeholder="Ваше имя*" required>
+          <input type="text" placeholder="Ваше телефон*" required>
+          <button class="form-button">Отправить</button>
+        </form>
+      </div>
+
+    </div>
+
     <header class="site-header">
       <div class="header-top">
         <div class="container">
@@ -189,32 +213,44 @@
         <h2 class="center-title">Наши услуги</h2>
 
         <div class="services-row">
+
           <div class="services-item">
             <div class="services-thumb">
               <img src="images/services-1.jpg" alt="Строительство домов">
             </div>
-            <h4 class="services-title">Строительство домов</h4>
-            <a href="#!" class="def-btn services-btn">Заказать услугу</a>
+            <div class="services-body">
+              <h4 class="services-title">Строительство домов</h4>
+              <a href="#modal-form" class="def-btn services-btn">Заказать услугу</a>
+            </div>
           </div>
+
           <div class="services-item">
             <div class="services-thumb">
               <img src="images/services-2.jpg" alt="Ремонт по дому">
             </div>
-            <h4 class="services-title">Строительство домов</h4>
-            <a href="#!" class="def-btn services-btn">Заказать услугу</a>
+            <div class="services-body">
+              <h4 class="services-title">Ремонт по дому</h4>
+              <a href="#modal-form" class="def-btn services-btn">Заказать услугу</a>
+            </div>
           </div>
+
           <div class="services-item">
             <div class="services-thumb">
               <img src="images/services-3.jpg" alt="Проектирование зданий">
             </div>
-            <h4 class="services-title">Строительство домов</h4>
-            <a href="#!" class="def-btn services-btn">Заказать услугу</a>
+            <div class="services-body">
+              <h4 class="services-title">Проектирование зданий</h4>
+              <a href="#modal-form" class="def-btn services-btn">Заказать услугу</a>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
 
+    <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
