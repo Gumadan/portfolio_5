@@ -20,5 +20,40 @@ document.addEventListener('DOMContentLoaded', () => {
 	  $('.modal-form-close').on('click', function(){
 		$.magnificPopup.close();
 	  });
+
+	  $('.gallery-wrap a').magnificPopup({
+		type: 'image',
+		gallery: {
+			enabled: true
+		}
+	  });
+
+	  $('.gallery-btn a').on('click', function(e){
+		
+		e.preventDefault();
+		var galleryItem = $('.gallery-item');
+
+		if($(this).hasClass('is-active')) {
+			$(this).removeClass('is-active');
+			$(this).text('Показать еще');
+			galleryItem.each(function () {
+				if($(this).hasClass('is-active')){
+					$(this).removeClass('is-active');
+					$(this).slideUp();
+				}
+			});
+		}
+		else {
+			$(this).addClass('is-active');
+			$(this).text('Скрыть');
+			galleryItem.each(function () {
+				if(!$(this).is(':visible')) {
+					$(this).addClass('is-active');
+					$(this).slideDown();
+				}
+			});
+		}
+
+	  });
 	  
 })
