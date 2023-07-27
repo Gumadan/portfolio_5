@@ -235,6 +235,14 @@ textarea::placeholder {
   line-height: 1.3;
 }
 
+.swiper-button-next {
+  right: 40px;
+}
+
+.swiper-button-prev {
+  left: 40px;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff;
@@ -524,4 +532,150 @@ textarea::placeholder {
 .gallery-btn {
   text-align: center;
   margin-top: 44px;
+}
+
+/* why */
+.s-why {
+  padding: 100px 0;
+}
+
+.why-row {
+  display: flex;
+  align-items: center;
+}
+
+.why-left {
+  max-width: 505px;
+}
+
+.s-why .def-desc {
+  margin: 55px 0;
+}
+
+.why-features-item {
+  display: flex;
+  margin-bottom: 45px;
+  max-width: 350px;
+}
+
+.why-features-icon {
+  margin-right: 15px;
+}
+
+.why-right img {
+  display: block;
+}
+
+.why-features-titile {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.why-features-desc {
+  color: #6D6A6A;
+}
+
+.why-right {
+  margin-left: auto;
+}
+
+/* team */
+
+.s-team {
+  padding: 100px 0;
+  background-color: #F9F9F9;
+}
+
+.center-title {
+}
+.team-row {
+  display: flex;
+  column-gap: 35px;
+}
+.team-item {
+  box-shadow: 0px 4px 4px 0px rgba(95, 87, 87, 0.12);
+}
+.team-thum img {
+  max-width: 100%;
+  display: block;
+}
+.team-body {
+  background-color: #fff;
+  padding: 20px 30px;
+}
+
+.team-profi {
+  text-transform: uppercase;
+  color: #C2C1C1;
+  margin-bottom: 5px;
+}
+
+.team-name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* reviews */
+.s-reviews {
+  padding: 100px 0;
+  background-size: cover;
+}
+
+.s-reviews .swiper-pagination {
+  bottom: 0;
+  position: static;
+  margin-top: 40px;
+}
+
+.reviews-item {
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(95, 87, 87, 0.12);
+}
+
+.reviews-thumb img {
+  max-width: 100%;
+}
+
+.reviews-body {
+  padding: 18px 30px;
+}
+
+.reviews-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.reviews-profi {
+  font-weight: 500;
+  color: #979494;
+  margin-bottom: 15px;
+}
+
+.reviews-comment {
+  color: #8A8787;
+  margin-bottom: 20px;
+}
+
+.reviews-social {
+  border-top: 1px solid #C5B8B8;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+.center-title {
+}
+.color-white {
+}
+.swiper {
+}
+.reviews-swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
 }
