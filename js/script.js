@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  // header buttom
+  $('.hamburger').on('click', function(){
+
+    if ($(this).hasClass('is-active')) {
+          $(this).removeClass('is-active');
+          $('.header-mobile-wrap').slideUp(500);
+    }
+    else{
+      $(this).addClass('is-active');
+      $('.header-mobile-wrap').slideDown(500);
+    }    
+  });
+
+  // banner
   const bannerSwiper = new Swiper(".banner-swiper", {
     speed: 1000,
     spaceBetween: 0,
@@ -13,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  // services
   $(".services-btn").magnificPopup({
     type: "inline",
   });
