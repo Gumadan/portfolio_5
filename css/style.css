@@ -550,6 +550,7 @@ textarea::placeholder {
 
 .why-left {
   max-width: 505px;
+  margin-right: 30px;
 }
 
 .s-why .def-desc {
@@ -597,9 +598,10 @@ textarea::placeholder {
 }
 .team-item {
   box-shadow: 0px 4px 4px 0px rgba(95, 87, 87, 0.12);
+  height: 100%;
 }
 .team-thum img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 .team-body {
@@ -636,7 +638,9 @@ textarea::placeholder {
 }
 
 .reviews-thumb img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .reviews-body {
@@ -676,7 +680,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   column-gap: 70px;
-  animation: move 20s linear;
+  animation: move 20s linear infinite;
 }
 .partners-item img {
   max-width: 250px;
@@ -866,9 +870,16 @@ textarea::placeholder {
   .numbers-right {
     grid-template-columns: repeat();
   }
+
+  /* why 1200 */
+
+  .why-right img {
+    max-width: 450px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  
   /* header 992px */
 
   .header-logo {
@@ -929,7 +940,7 @@ textarea::placeholder {
     font-size: 14px;
   }
 
-  /* about */
+  /* about 992 */
   .about-row {
     display: block;
   }
@@ -945,7 +956,7 @@ textarea::placeholder {
     max-width: 510px;
   }
 
-  /* numbers 922 */
+  /* numbers 992 */
 
   .s-numbers .def-title {
     margin-bottom: 20px;
@@ -991,6 +1002,98 @@ textarea::placeholder {
   .services-title {
     font-size: 18px;
     line-height: 1.5;
+  }  
+
+  /* gallery 992 */
+
+  .gallery-wrap {
+    grid-gap: 20px;
+  }
+  .s-gallery {
+    padding: 60px 0;
+  }
+
+  /* why 992 */
+
+  .s-why {
+    padding: 60px 0;
+  }
+  .why-row {
+    display: block;
+  }
+  .why-left {
+    margin: 0 auto;
+  }
+  .why-right {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .why-right img {
+    width: 100%;
+  }
+  .why-features-icon img {
+    max-width: 25px;
+  }
+  .why-features-titile {
+    font-size: 16px;
+  }
+  .why-features-desc {
+    font-size: 14px;
+  }
+
+  /* our team 992 */
+
+  .s-team {
+    padding: 60px 0;
+  }
+  .team-row {
+    column-gap: 20px;
+  }
+  .team-body {
+    padding: 15px 20px 30px 20px;
+  }
+  .team-profi {
+    font-size: 14px;
+  }
+  .team-name {
+    font-size: 18px;
+  }
+
+  /* reviews 992 */
+  .s-reviews {
+    padding: 60px 0;
+  }
+
+  /* form 992 */
+
+  .s-form {
+    padding: 60px 0;
+  }
+  .form-row {
+    display: block;
+  }
+  .form-left {
+    margin: 0 auto 30px auto;
+  }
+  .form-right {
+    margin: 0 auto;
+    max-width: 425px;
+    width: 100%;
+  }
+
+  /* footer 992 */
+
+  .fotter-row {
+    display: block;
+  }
+  .footer-left {
+    max-width: none;
+    border-right: none;
+    padding-right: 0;
+  }
+  .footer-right {
+    padding: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -1009,9 +1112,11 @@ textarea::placeholder {
   .def-title {
     font-size: 32px;
     margin-bottom: 20px;
+    line-height: 1.3;
   }
   .center-title {
     font-size: 32px;
+    line-height: 1.3;
   }
   .center-title::after {
     width: 50px;
@@ -1148,6 +1253,57 @@ textarea::placeholder {
     flex-wrap: wrap;
     row-gap: 20px;
   }
+
+  /* gallery 768 */
+
+  .gallery-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* our team 768 */
+  
+  .team-row {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .team-item {
+    width: calc(50% - 10px);
+    height: auto;
+  }
+
+  /* reviews 768 */
+
+  .reviews-body {
+    padding: 5px 20px 20px 20px;
+  }
+  .reviews-name {
+    font-size: 18px;
+  }
+  .reviews-profi {
+    font-size: 14px;
+  }
+  .reviews-comment {
+    font-size: 14px;
+  }
+
+  /* footer 768 */
+
+  .s-footer {
+    text-align: center;
+  }
+  .footer-right {
+    display: block;
+  }
+  .footer-info-item {
+    justify-content: center;
+  }
+  .footer-social {
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .footer-nav {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1204,4 +1360,34 @@ textarea::placeholder {
   .services-item {
     width: 250px;
   }
+
+  /* gallery 575 */
+
+  .s-gallery {
+    padding: 40px 0;
+  }
+  .gallery-wrap {
+    grid-gap: 15px;
+  }
+  .gallery-btn {
+    margin-top: 30px;
+  }
+
+  /* our team 575 */
+
+  .team-item {
+    width: 100%;
+  }
+
+  /* form 575 */
+
+  .form-right form {
+    padding: 50px 30px;
+  }
+  .form-right form input,
+  .form-right form textarea {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
 }

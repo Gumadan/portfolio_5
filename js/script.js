@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   // header buttom
-  $('.hamburger').on('click', function(){
-
-    if ($(this).hasClass('is-active')) {
-          $(this).removeClass('is-active');
-          $('.header-mobile-wrap').slideUp(500);
+  $(".hamburger").on("click", function () {
+    if ($(this).hasClass("is-active")) {
+      $(this).removeClass("is-active");
+      $(".header-mobile-wrap").slideUp(500);
+    } else {
+      $(this).addClass("is-active");
+      $(".header-mobile-wrap").slideDown(500);
     }
-    else{
-      $(this).addClass('is-active');
-      $('.header-mobile-wrap').slideDown(500);
-    }    
   });
 
   // banner
@@ -71,12 +68,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const reviewsSwiper = new Swiper(".reviews-swiper", {
     speed: 1000,
-    spaceBetween: 25,
-    slidesPerView: 3,
+    spaceBetween: 20,
     pagination: {
       el: ".reviews-swiper .swiper-pagination",
       type: "bullets",
       clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      575: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
     },
   });
 });
